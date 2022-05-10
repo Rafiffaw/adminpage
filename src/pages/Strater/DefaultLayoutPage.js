@@ -22,7 +22,7 @@ const DefaultLayoutPage  = () => {
     setContent(data)
   }
   
-  const date  = new Date("2019-10-30T14:01:59.689Z")
+  
   
   const renderContent = (data, index,) => {
     return(
