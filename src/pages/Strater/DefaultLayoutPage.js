@@ -18,6 +18,7 @@ const DefaultLayoutPage  = () => {
     const { data, error } = await supabase
       .from('tsanrofess')
       .select('*')
+      .order('id', { ascending: false })
     console.log(data)
     setContent(data)
   }
