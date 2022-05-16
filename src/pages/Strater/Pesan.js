@@ -58,6 +58,7 @@ const DefaultLayoutPage  = () => {
              <div className="mb-3">
                <h3 style={{fontSize: '13px', opacity: ".7"}}>
                   {new Intl.DateTimeFormat('id', { 
+                    
                     month: 'long', 
                     day: '2-digit',
                     year: 'numeric',
