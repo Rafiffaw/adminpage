@@ -9,15 +9,35 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 const DefaultLayoutPage  = () => {
   const [content, setContent] = useState([]);
-
+  
   useEffect(() => {
     getContent()
   },[])
+
+  useEffect(() => {
+    const { data, error } = supabase
+    .from('tsanrofess')
+      .on("*",(payload) => {
+      const newConten = payload.new;
+      setContent((oldContent) => {
+        const newContent = [...oldContent, newConten];
+        newContent.sort((a, b) => b.id - a.id);
+        return newContent;
+      });
+    })
+    .subscribe();
+    /* return () => {
+      data.unsubscribe();
+    }; */
+  },[])
+
+
 
   const getContent = async () => {
     const { data, error } = await supabase
       .from('tsanrofess')
       .select('*')
+      .order('id', { ascending: false })
     console.log(data)
     setContent(data)
   }
@@ -58,16 +78,7 @@ const DefaultLayoutPage  = () => {
     <div className="main-content">
     <section className="section">
       <div className="section-header">
-        <h1>Menfess</h1>
-        <div className="section-header-breadcrumb">
-          <div className="breadcrumb-item active">
-            <a href="#">Dashboard</a>
-          </div>
-          <div className="breadcrumb-item">
-            <a href="#">Pesan</a>
-          </div>
-          <div className="breadcrumb-item">Menfess</div>
-        </div>
+        <h1>Pesan</h1>
       </div>
       <div className="section-body">
         <div className="container-fluid">

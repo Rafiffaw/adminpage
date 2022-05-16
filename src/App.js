@@ -33,7 +33,7 @@ import { useLocation } from "react-router-dom";
 
 import EcommerceDashboard from "./pages/Dashboard/GeneralDashboard";
 import GeneralDashboard from "./pages/Dashboard/GeneralDashboard";
-import DefaultLayoutPage from "./pages/Strater/DefaultLayoutPage.js";
+import Pesan from "./pages/Strater/Pesan.js";
 import BootstrapAlert from "./pages/Strater/Bootstrap/BootstrapAlert";
 import BootstrapBadge from "./pages/Strater/Bootstrap/BootstrapBadge";
 import BootstrapButtons from "./pages/Strater/Bootstrap/BootstrapButtons";
@@ -177,7 +177,7 @@ function App() {
         <Switch history={history}>
           <Route path="/" exact component={EcommerceDashboard} />
           <Route path="/dashboard/general" component={GeneralDashboard} />
-          <Route path="/layout/default" component={DefaultLayoutPage} />
+          <Route path="/pesan" component={Pesan} />
           <Route
             path="/layout/transparent-sidebar"
             component={TransparentSidebar}

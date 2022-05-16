@@ -16,37 +16,13 @@ export const Data = {
             url: '/',
         },
         {
-            dropdown: true,
+            dropdown: false,
 
             name: 'Pesan',
             icon: 'fas fa-comment',
-            children: [{
-                    name: 'Menfess',
-                    url: '/layout/default',
-                }, {
-                    name: 'Kritik & Saran',
-                    url: '/layout/transparent-sidebar'
+            url: '/pesan',
 
-                }, {
-
-                    name: 'Pelajaran Atau Materi',
-                    url: '/layout/top-navigation'
-                }
-
-            ]
         },
-        {
-            dropdown: true,
-            active: false,
-            name: 'Auth',
-            icon: 'far fa-user',
-            children: [
-                {
-                    name: 'Login',
-                    url: '/auth/login',
-                    active: false
-                },
-            ]
-        },
+        
     ]
 };
