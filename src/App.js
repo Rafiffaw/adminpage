@@ -31,8 +31,8 @@ import { useLocation } from "react-router-dom";
 // import PostCreate from "./pages/Pages/Features/PostCreate";
 // import Posts from "./pages/Pages/Features/Posts";
 
-import EcommerceDashboard from "./pages/Dashboard/GeneralDashboard";
-import GeneralDashboard from "./pages/Dashboard/GeneralDashboard";
+import EcommerceDashboard from "./pages/Dashboard/GeneralDashboard.js";
+import GeneralDashboard from "./pages/Dashboard/GeneralDashboard.js";
 import Pesan from "./pages/Strater/Pesan.js";
 import BootstrapAlert from "./pages/Strater/Bootstrap/BootstrapAlert";
 import BootstrapBadge from "./pages/Strater/Bootstrap/BootstrapBadge";

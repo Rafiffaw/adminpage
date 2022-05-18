@@ -27,8 +27,7 @@ const Header = () => {
           <Search searchResultData={searchResultData} />
         </form>
         <ul className="navbar-nav navbar-right">
-          <ToggleData data={EnvelopData} />
-          <ToggleData data={NotifyData} />
+          
 
           <UserDropdown userDetail={userDetail} />
         </ul>
