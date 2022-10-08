@@ -54,7 +54,7 @@ const DefaultLayoutPage  = () => {
          <div className="media-body" id="isi">
            <h5 className="mt-3">{data.tipe}</h5>
            <div className="mr-2">
-             <p style={{fontSize: '16px', whiteSpace: "pre-wrap"}}>{data.pesan}</p>
+             <span style={{fontSize: '16px', whiteSpace: "pre-wrap"}}>{data.pesan}</span>
              <div className="mb-3">
                <h3 style={{fontSize: '13px', opacity: ".7"}}>
                   {new Intl.DateTimeFormat('id', { 
